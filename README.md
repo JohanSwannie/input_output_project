@@ -4,7 +4,7 @@
 #
 # This small project will create 1 empty dictionary and list - it will then read an input TXT file and build the list
 # Then it will iterate through the list and build the dictionary.
-# Lastly it will use the dictionary and a lambda expressions to print output
+# Lastly it will use the dictionary and a lambda expression to print the output to the console
 #
 #  input_output_p02 - Binary file example
 #
