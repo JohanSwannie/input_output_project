@@ -2,13 +2,13 @@ swan = open("C:\\Users\\Johan Swan\\Downloads\\stelliewalie.txt", 'tr')
 for b in swan:
     print(b)
     if "PETRE" in b.upper():
-        print('Yes')
+        print('Yes Petre in file')
     else:
-        print('no')
+        print('Petre not in file')
     if 'kobie' in b.lower():
-        print('Hallelujah')
+        print('kobie definitely in file')
     else:
-        print('ag nee')
+        print('kobie not in file')
 
 print()
 print('--------------------------------------------------------------------------')
