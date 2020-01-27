@@ -1,4 +1,4 @@
-# input_output_p02 - TXT file examples with several methods to manipulate input, write output, append file information and delete files
+# input_output_p12 - TXT file examples with several methods to manipulate input, write output, append file information and delete files
 #
 # input_output_p02 - Binary file examples with several methods to manipulate input, write output, append file information and delete files
 #
