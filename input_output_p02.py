@@ -1,4 +1,4 @@
-swan = open("C:\\Users\\Johan Swan\\Downloads\\stelliewalie.txt", 'tr')
+swan = open("stelliewalie.txt", 'tr')
 for b in swan:
     print(b)
     if "PETRE" in b.upper():
@@ -20,7 +20,7 @@ def readDisplay():
         print(line)
         line = sariemarais.readline()
 
-with open("C:\\Users\\Johan Swan\\Downloads\\sariemarais.txt", 'r') as sariemarais:
+with open("sariemarais.txt", 'r') as sariemarais:
     line = sariemarais.readline()
     readDisplay()
 
@@ -28,7 +28,7 @@ print()
 print('--------------------------------------------------------------------------')
 print()
 
-with open("C:\\Users\\Johan Swan\\Downloads\\karaballa.txt", 'r') as garabaldi:
+with open("karaballa.txt", 'r') as garabaldi:
     lines = garabaldi.readline()
     while lines:
         for line in lines[::-1]:
@@ -50,7 +50,7 @@ person = {1: "Sanet & Doors", 2: "Amanda & Hennie", 3: "Chris en sy vreeslose vr
 person_locat = 1
 phrase1 = "   ---   lives in   ---    "
 
-with open("C:\\Users\\Johan Swan\\Downloads\\cities.txt", 'w') as swannie_file:
+with open("cities.txt", 'w') as swannie_file:
     for city in cities:
         print(person[person_locat], phrase1, city.upper(), file=swannie_file)
         print('  ', file=swannie_file, flush=True)
@@ -60,7 +60,7 @@ print()
 print('--------------------------------------------------------------------------')
 print()
 
-with open("C:\\Users\\Johan Swan\\Downloads\\AAseBB.txt", 'r') as taranaki:
+with open("AAseBB.txt", 'r') as taranaki:
     lines = taranaki.readline()
     while lines:
         for line in lines[::-1]:
