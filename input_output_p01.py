@@ -4,7 +4,7 @@
 dict1 = dict({})
 list1 = []
 
-with open("C:\\Users\\Johan Swan\\Downloads\\lambda-names.txt") as f:
+with open("lambda-names.txt") as f:
     for line in f:
         list1.append(line.strip().split())
     f.close()
