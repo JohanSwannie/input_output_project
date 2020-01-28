@@ -105,7 +105,27 @@ print()
 print('--------------------------------------------------------------------------')
 print()
 
-# EXAMPLE 7 - WRITE
+# EXAMPLE 7 - READ TEX FILE WITH BINARY VALUES
+# This should output "ASK ME A QUESTION"
+
+with open("binary_file1.txt", 'r') as bin1:
+    data1 = bin1.read(8)
+    print(data1)
+    cntr1 = 1
+    while data1 != '':
+        real_text = chr(int(data1, 2))
+        if cntr1 not in (1, 9):
+            if real_text in ('K', 'E', 'A'):
+                print(real_text, end = '  ')
+            else:
+                print(real_text, end = '')
+        else:
+            print(real_text, end='')
+        cntr1 += 1
+        data1 = bin1.read(8)
+
+
+# EXAMPLE 8 - WRITE
 
 nbr = 1
 list1 = ["Python", "Javascript", "JQuery", "JSON", "HTML", "CSS"]
@@ -116,14 +136,14 @@ with open("languages.txt", "w") as nf1:
         nf1.write(str(nbr)+ ') '); nf1.write(langs); nf1.write('   '); nf1.write('\n')
         nbr += 1
         
-# EXAMPLE 8 - APPEND
+# EXAMPLE 9 - APPEND
 
 list2 = ["7) C#.Net   ", "8) Ruby   ", "9) Scala   ", "10) Hadoop   ", "11) Cobol   "]
 with open("languages.txt", "a") as af1:
     for newlang in list2:
         af1.write(newlang); af1.write('\n')
     
-# EXAMPLE 9 - DELETE
+# EXAMPLE 10 - DELETE
 
 import os
 os.remove("languages.txt")
