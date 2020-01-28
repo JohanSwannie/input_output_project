@@ -105,7 +105,7 @@ print()
 print('--------------------------------------------------------------------------')
 print()
 
-# EXAMPLE 7 - READ TEX FILE WITH BINARY VALUES
+# EXAMPLE 7 - READ TEXT FILE WITH BINARY VALUES
 # This should output "ASK ME A QUESTION"
 
 with open("binary_file1.txt", 'r') as bin1:
